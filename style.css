@@ -6,7 +6,7 @@
 
     footer {
 
-    background-color: #CA6510;
+    background-color: #ff7300;
     padding: 25px;
 
     }
@@ -16,9 +16,27 @@
         font-size: 30px;
     }
 
+    .icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 80px;
+        height: 40px;
+        background-color: white;
+        font-size: 20px;
+        color: #ff7300;
+        border-radius: .65rem;
+      }
+
+    footer .icon{
+
+        width: 60px;
+        height: 60px;
+
+    }
     .carousel-caption {
 
-    background-color: rgb(202, 101, 16, 0.7);
+    background-color: rgba(255, 115, 0, 0.7);
     border-radius: 1rem;
 
     }
@@ -29,8 +47,8 @@
     
     }
 
-    .main__title{
-        color:brown;
+    .main_title{
+        color:#ff7300;
         font-family: Georgia, 'Times New Roman', Times, serif ;
     }
 
@@ -52,11 +70,10 @@
     }
 
     #galeria button{
-        margin-top: 25px;
-        background-color: #CA6510;
+        background-color: #ff7300;
         border: 0;
         border-radius: 5px;
-        box-shadow: 0 2px 4px #CA6510;
+        box-shadow: 0 2px 4px #ff7300;
         color: #fff;
         font-size: 15px;
         padding: 10px 25px;

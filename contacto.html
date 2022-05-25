@@ -68,17 +68,103 @@
   </div>
 </div>
 
- <body class="d-flex flex-column min-vh-100">
+ <body>
       
-        <div class="container-lg col-8 justify-content-around text-center mb-5">
-          <div class="shadow-sm p-3 bg-body rounded my-5">
+        <div class="container-fluid" id="cont">
+          <div class="row mt-3">
+            <form action="">
+            <h2>¿Tienes alguna duda o recomendación? ¿Algo mal con tu pedido? ¡Contáctanos!</h2>
+              <div class="container-fluid">
+              <div class="form-group row" >
+                  <div class="col-md-6">
+                    <label for="formGroup" >Nombres:</label>
+                      <input type="text"  class="field" placeholder="Ana" required><br><br>
+                      </div>
+                  <div class=" col-6">
+                    <label for="formGroup2" >Apellidos:</label>
+                      <input type="text" class="field" placeholder="Millas Zapata" required><br><br>
+                      </div>
+            </div>
+            <div class="form-group row" >
+              <div class="col-6 mb-3">
+              <label for="dire">Dirección:</label>
+              <input type="text" class="field" name="dire" placeholder="Dirección" required><br><br>
+              </div>
+              <div class="col-6 mb-3">
+              <label for="dire2">Comuna:</label>
+              <input type="text" class="field" name="dire2" placeholder="Comuna" required><br><br>
+              </div>
+             
+              <div class="form-group row" >
+                <div class="col-6 mb-3"> 
+              <label for="dire3">Ciudad:</label>
+              <input type="text" class="field"   name="dire3" placeholder="Ciudad" required><br><br>
+              </div>
 
-        Aquí los formularios
+              
+                <div class=" col-6 mb-3">
+              <label for="mail">Email:</label>
+              <input type="email" class="" name="mail" placeholder="Email@ejemplo.com" required><br><br>
+             </div>
+            
+            
+              <div class="col-6 mb-3">
+             <label for="phone">Fono:</label>
+              <input type="tel" minlength="9" maxlength="12" id="phone"  name=""  placeholder="+56900099987" required><br><br>
+              </div>
+              <div class="col-3">
+                <label> ¿Por qué nos contactas? </label>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="radio" name="opc" id="dud" value="duda" required> Duda
+                  </label>
+                  </div>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input type="radio" name="opc" id="rec" value="reclamo" > Reclamo
+                    </label>
+                  </div>
+              </div>
+              <div class="col-3"></div>
+              </div>
+
+              <div class="mb-3">
+                <label for="FormControlTextarea1" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="FormControlTextarea1" rows="3" required></textarea>
+              </div>
+          </div>
+              
+              <div class="mb-3">
+                <label for="formFile" class="form-label">Seleccionar archivo</label>
+                <input class="form-control" type="file" id="formFile"  required>
+              </div>
+            
+              <div class="custom-control custom-checkbox" style="text-align:center">
+                
+                <input type="checkbox" name="" id="checkbox1" class="custom-control-input" required>
+                <label for="checbox1" class="custom-control-label"> 
+                   <a href="https://es.shopify.com/herramientas/generador-politica-de-privacidad/mostrar/m7h6eQ1If4s=--Qwwo%2FGLIDWd1QDnm--A6+lY51HjGcM+1WGP9cy5A==?utm_campaign=growth_tools&utm_content=policy&utm_medium=email&utm_source=sendgrid"  > 
+                     Acepto los Terminos y Condiciones</a> </label> 
+              </div>
+                
+
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-2">
+                  <br><button class="btn btn-primary" type="submit" required="">Enviar </button><br><br>
+                </div>
+             </div>
+            </form>
+            
+            <br> <p>Al presionar "enviar" tus datos ingresados serán utilizados para contactarte si es requerido.</p><br>
+            
+            </body>
+            </html>
         
         
       </div>
         </div> 
-
+</div>
     </body>
 
 

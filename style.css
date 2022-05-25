@@ -83,4 +83,17 @@
         padding: 10px 25px;
     }
    
+     #cont{
+       width: 90%;
+       max-width: 700px;
+       background: rgba(255, 251, 251, 0.97);
+       padding: 10px 15px;
+       box-sizing: border-box;
+       margin-top: 20px;
+       margin-bottom: 20px;
+       border-radius: 7px;
+
     
+
+   }
+

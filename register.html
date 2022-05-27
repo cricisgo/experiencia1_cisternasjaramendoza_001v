@@ -36,7 +36,7 @@
                 <a class="nav-link" href="quienes_somos.html">Quienes somos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+                <a class="nav-link" href="contacto.html">Contacto</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link disabled" href="tienda.html">Tienda</a>
@@ -46,7 +46,7 @@
             <form class="d-flex">
               
               <div class="icon bg-gradient me-3">
-                <a href="login.html" class="text-reset"><strong><i class="bi bi-person" style="font-size: 25px;"></i></strong></a>
+                <a href="login.html" class="text-reset"><strong><i class="bi bi-person-fill" style="font-size: 25px;"></i></strong></a>
                 </div>
               <div class="icon bg-gradient me-3" data-bs-toggle="offcanvas" data-bs-target="#carrito" aria-controls="carritoDeCompras">
                 <a href="#" class="text-reset"><strong><i class="bi bi-cart2" style="font-size: 25px;"></i></strong></a>
@@ -72,12 +72,31 @@
       
   <div class="container-lg my-5 shadow-sm p-3 bg-body rounded" id="contacto">
           
-    <center><h2 class="p-3 mt-3">¿Tienes alguna duda o recomendación? ¿Algo mal con tu pedido? ¡Contáctanos!</h2></center>
-    <hr class="my-2">
+    <center><h2 class="p-3 mt-3">¡Regístrese para recibir múltiples beneficios!</h2></center>
+
+      <hr class="my-2">
+
       <form class="needs-validation" action="" novalidate>
         
         <div class="row g-3 p-3 justify-content-around">
             
+          <div class="col-md-6 my-3">
+            <label for="mail" class="form-label">Email</label>
+            <input type="email" class="form-control" name="mail" placeholder="Email@ejemplo.com" required>
+            <div class="invalid-feedback">
+              Ingrese un email válido.
+            </div>
+           </div>
+          
+           <div class="col-md-6 my-3">
+            <label for="psw" class="form-label">Contraseña</label>
+            <input class="form-control" type="password" minlength="9" maxlength="12" id="psw"  name="phone"  placeholder="" required>
+            <div class="invalid-feedback">
+              Ingrese una contraseña válida.
+            </div>
+          </div>
+
+
           <div class="col-md-6 my-3">
                
               <label for="nombres" class="form-label">Nombres</label>
@@ -96,15 +115,6 @@
                 </div>
                 </div>
       
-    
-        <div class="col-md-6 my-3">
-          <label for="mail" class="form-label">Email</label>
-          <input type="email" class="form-control" name="mail" placeholder="Email@ejemplo.com" required>
-          <div class="invalid-feedback">
-            Ingrese un email válido.
-          </div>
-         </div>
-        
          
           <div class="col-md-6 my-3">
          <label for="phone" class="form-label">Fono</label>
@@ -114,93 +124,74 @@
           </div>
       </div>
 
-        <div class="col-md-6 my-3">
-        <label for="dire" class="form-label">Dirección</label>
-        <input type="text" class="form-control" name="dire" placeholder="" required>
-        <div class="invalid-feedback">
-          Debe ingresar una dirección.
-        </div>
-        </div>
+        
 
         <div class="col-md-6 my-3">
-        <label for="comuna" class="form-label">Comuna</label>
-        <input type="text" class="form-control" name="comuna" placeholder="" required>
-        <div class="invalid-feedback">
-          Debe ingresar una comuna.
+        <label for="mascota" class="form-label">Nombre de tu mascota</label>
+        <input type="text" class="form-control" name="mascota" placeholder="" required>
+        <div class="valid-feedback">
+          ¡Lindo nombre!
         </div>
         </div>
         
 
-          <div class="col-md-6 my-3"> 
-        <label for="ciudad" class="form-label">Ciudad</label>
-        <input type="text" class="form-control" name="ciudad" placeholder="" required>
-        <div class="invalid-feedback">
-          Debe ingresar una ciudad.
-        </div>
+        <div class="col-md-6 p-4">
+          
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="newsletter" id="nl">
+            <label class="form-check-label" for="tyc">
+              <h6>Me gustaría recibir promociones por email.</h6>
+            </label>
+            
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="acepta" id="tyc" required>
+            <label class="form-check-label" for="tyc">
+              <a class="h6" href="https://es.shopify.com/herramientas/generador-politica-de-privacidad/mostrar/m7h6eQ1If4s=--Qwwo%2FGLIDWd1QDnm--A6+lY51HjGcM+1WGP9cy5A==?utm_campaign=growth_tools&utm_content=policy&utm_medium=email&utm_source=sendgrid"  > 
+                Acepto los Términos y Condiciones</a>
+            </label>
+          </div>
+       
         </div>
         
         <div class="col-md-6 my-3">
-          <label class="form-label">¿Por qué nos contactas? </label>
+          <label class="form-label">¿Cuál es tu mascota? </label>
           <div class="form-check">
             <label class="form-check-label">
-              <input class="form-check-input" type="radio" name="opc" id="dud" value="duda" required>Duda
+              <input class="form-check-input" type="radio" name="opc" id="per" value="perro" required>Perro
             </label>
             </div>
+
             <div class="form-check">
               <label class="form-check-label">
-                <input class="form-check-input" type="radio" name="opc" id="rec" value="reclamo" >Reclamo
+                <input class="form-check-input" type="radio" name="opc" id="gat" value="gato" >Gato
               </label>
-              
+            </div>
+
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="radio" name="opc" id="exo" value="exotico">Exotico
+              </label>
             </div>
           
         </div>
         
         <hr class="my-2">
 
-        <div class="col-12 my-3">
-          <label for="FormControlTextarea" class="form-label">Mensaje</label>
-          <textarea class="form-control" id="FormControlTextarea" rows="3" required></textarea>
-          <div class="invalid-feedback">
-            Debe ingresar un mensaje.
-          </div>
-        </div>
-
-        <div class="col-md-12 mb-3">
-          <label for="formFile" class="form-label">Seleccionar archivo</label>
-          <input class="form-control" type="file" id="formFile">
-        </div>
-      
-        <div class="col-md-4">
-          <center>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="tyc" required>
-            <label class="form-check-label" for="tyc">
-              <a href="https://es.shopify.com/herramientas/generador-politica-de-privacidad/mostrar/m7h6eQ1If4s=--Qwwo%2FGLIDWd1QDnm--A6+lY51HjGcM+1WGP9cy5A==?utm_campaign=growth_tools&utm_content=policy&utm_medium=email&utm_source=sendgrid"  > 
-                Acepto los Términos y Condiciones</a>
-            </label>
-            <div class="invalid-feedback">
-              Debes aceptar los términos y condiciones
-            </div>
-          </div>
-        </center>
-        </div>
-          
-
         
+           <center><button class="btn btn-primary" type="submit" required>Enviar</button> <br>
           
-            <button class="btn btn-primary" type="submit" required>Enviar </button>
-          
-            <h6 style="text-align: center">Al presionar <kbd>Enviar</kbd> tus datos ingresados serán utilizados para contactarte si es requerido.<h6/>
-        </div>
+            <h6 class="mt-3">Al presionar <kbd>Enviar</kbd> tus datos encriptados y alamcenados en un ambiente seguro.<h6/></center>
+        
+      </div>
       </form>
       
      
       </div>
-      
-       
 
-    
-</body>
+    </body>
+
 
         <footer class="container-fluid-lg text-center mt-auto">
 
